@@ -7,7 +7,7 @@ import org.springframework.stereotype.Component;
 import java.time.LocalDateTime;
 import java.time.Month;
 
-//@Component
+@Component
 public class DbInitializer implements CommandLineRunner {
     private final EmployeeRepository employeeRepository;
 
