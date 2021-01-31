@@ -1,0 +1,13 @@
+version: "2.3"
+
+services:
+  database:
+    image: mysql:8.0
+    container_name: employees-project-db3
+    environment:
+      - MYSQL_USER=test
+      - MYSQL_ROOT_PASSWORD=pw
+      - MYSQL_PASSWORD=test
+      - MYSQL_DATABASE=employee
+    ports:
+    - 3306:3306
