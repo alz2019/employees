@@ -1,6 +1,6 @@
 Employees Application
 ===
-## Spring Boot/Angular CRUD application
+Spring Boot/Angular CRUD application
 
 ## Built With
 
