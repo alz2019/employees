@@ -48,7 +48,7 @@ public class EmployeesIT {
                 .then()
                 .statusCode(200)
                 .body("", Matchers.hasSize(1))
-                .body("", Matchers.anything("[{birthday=null, firstName=John, lastName=Doe, id=1, position=null, email=null}]"));
+                .body("", Matchers.hasToString("[{birthday=null, firstName=John, lastName=Doe, id=1, position=null, email=null}]"));
 
         given()
                 .port(port)
