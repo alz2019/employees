@@ -15,6 +15,9 @@ public class DbInitializer implements CommandLineRunner {
         this.employeeRepository = employeeRepository;
     }
 
+    /**
+     * Generated with jfairy - Java data generator
+     */
     @Override
     public void run(String... args) throws Exception {
         this.employeeRepository.deleteAll();
@@ -28,7 +31,7 @@ public class DbInitializer implements CommandLineRunner {
         Employee employee7 = new Employee(7L, "Molly", "Mueller", LocalDateTime.of(1966, Month.NOVEMBER, 7, 0, 0), "Middle", "mueller@yahoo.com");
         Employee employee8 = new Employee(8L, "Mia", "Cervantes", LocalDateTime.of(1971, Month.JULY, 26, 0, 0), "Middle", "miacervantes@gmail.com");
         Employee employee9 = new Employee(9L, "Aaliyah", "Atkinson", LocalDateTime.of(1982, Month.APRIL, 23, 0, 0), "Junior", "aaliyahatkinson@yahoo.com");
-        Employee employee10 = new Employee(10L, "Brad", "Fernandez", LocalDateTime.of(1971, Month.DECEMBER, 25, 0, 0), "Trainee", "fernandez@mail.com");
+        Employee employee10 = new Employee(10L, "Landon", "Lopez", LocalDateTime.of(1973, Month.AUGUST, 20, 0, 0), "Trainee", "lopez@yahoo.com");
 
         this.employeeRepository.save(employee1);
         this.employeeRepository.save(employee2);
