@@ -15,13 +15,11 @@ public class DbInitializer implements CommandLineRunner {
         this.employeeRepository = employeeRepository;
     }
 
-    /**
-     * Generated with jfairy - Java data generator
-     */
     @Override
     public void run(String... args) throws Exception {
         this.employeeRepository.deleteAll();
 
+        // Data generated with jfairy - Java data generator
         Employee employee1 = new Employee(1L, "Alexa", "Wright", LocalDateTime.of(1982, Month.FEBRUARY, 5, 0, 0), "Team Lead", "alexa.wright@gmail.com");
         Employee employee2 = new Employee(2L, "Ashley", "Flores", LocalDateTime.of(1987, Month.MAY, 11, 0, 0), "Scrum Master", "ashley.flores@mail.com");
         Employee employee3 = new Employee(3L, "Andrew", "Humphrey", LocalDateTime.of(1959, Month.JUNE, 29, 0, 0), "Tech Lead", "humphrey@mail.com");
