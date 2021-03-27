@@ -1,4 +1,4 @@
-Employees Application
+Employee Management System
 ===
 
 Spring Boot/Angular CRUD application
