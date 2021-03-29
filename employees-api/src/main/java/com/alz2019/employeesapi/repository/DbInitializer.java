@@ -2,12 +2,14 @@ package com.alz2019.employeesapi.repository;
 
 import com.alz2019.employeesapi.model.Employee;
 import org.springframework.boot.CommandLineRunner;
+import org.springframework.context.annotation.Profile;
 import org.springframework.stereotype.Component;
 
 import java.time.LocalDateTime;
 import java.time.Month;
 
 @Component
+@Profile("!test")
 public class DbInitializer implements CommandLineRunner {
     private final EmployeeRepository employeeRepository;
 
