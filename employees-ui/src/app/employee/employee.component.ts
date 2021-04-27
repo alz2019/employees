@@ -10,7 +10,7 @@ export class Employee {
     public firstName: string,
     public lastName: string,
     public birthday: Date,
-    public position: string,
+    public phone: string,
     public email: string
   ) {
   }
@@ -41,7 +41,7 @@ export class EmployeeComponent implements OnInit {
       firstName: [''],
       lastName: [''],
       birthday: [''],
-      position: [''],
+      phone: [''],
       email: ['']
     } );
   }
@@ -93,7 +93,7 @@ export class EmployeeComponent implements OnInit {
       firstName: employee.firstName,
       lastName: employee.lastName,
       birthday: employee.birthday,
-      position: employee.position,
+      phone: employee.phone,
       email: employee.email
     })
   }

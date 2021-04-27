@@ -3,7 +3,7 @@ version: "2.3"
 services:
   database:
     image: mysql:8.0
-    container_name: employees-project-db3
+    container_name: employees-project-db
     environment:
       - MYSQL_USER=test
       - MYSQL_ROOT_PASSWORD=pw

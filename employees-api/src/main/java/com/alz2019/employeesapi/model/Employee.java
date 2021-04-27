@@ -24,7 +24,7 @@ public class Employee {
 
     private LocalDateTime birthday;
 
-    private String position;
+    private String phone;
 
     private String email;
 }
